@@ -2,10 +2,20 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import team1 from "@/assets/hirwa-franklin.jpg";
 import team2 from "@/assets/niyirera-prince-louis.png";
+import team3 from "@/assets/team-1.png";
+import team4 from "@/assets/team-2.jpg";
+import team5 from "@/assets/team-3.jpg";
+import team6 from "@/assets/teta-queen.png";
+import team7 from "@/assets/secretary.jpg";
 
 const team = [
   { name: "Hirwa Franklin", role: "Founder & Director", img: team1 },
-  { name: "Niyirera Prince Louis", role: "Volunteer Coordinator", img: team2 },
+  { name: "Niyirera Prince Louis", role: "IT Manager", img: team2 },
+  { name: "Ngenzi bruce", role: "Media manager", img: team6 },
+  { name: "Teta Queen", role: "Secretary", img: team7 },
+  { name: "kabundi Patrick", role: "Member", img: team3 },
+  { name: "Mutabazi Hannia", role: "Member", img: team4 },
+  { name: "Shima icyiza Bonheur", role: "Member", img: team5 },
 ];
 
 const TeamSection = () => {
@@ -19,8 +29,8 @@ const TeamSection = () => {
           <h2 className="text-3xl md:text-4xl font-heading text-foreground mb-4">{t("team.title")}</h2>
           <p className="text-muted-foreground">{t("team.subtitle")}</p>
         </motion.div>
-        
-        <div className="grid sm:grid-cols-2 gap-12 max-w-3xl mx-auto">
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
           {team.map((person, i) => (
             <motion.div key={person.name} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               className="text-center group">
