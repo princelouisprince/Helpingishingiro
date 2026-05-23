@@ -1,0 +1,10 @@
+# Render Blueprint Specification to automate deployment
+services:
+  - type: static
+    name: ishingiroinitiatives
+    buildCommand: npm run build
+    publishDir: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
