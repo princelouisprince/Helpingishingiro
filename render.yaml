@@ -1,7 +1,7 @@
 # Render Blueprint Specification to automate deployment
 services:
   - type: web
-    name: helpingishingiro
+    name: ishingiroinitiatives
     env: static
     buildCommand: npm run build
     publishDir: dist
