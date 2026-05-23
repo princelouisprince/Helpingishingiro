@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import AdminPanel from "./AdminPanel";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -37,8 +38,9 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="border-t border-primary-foreground/10 pt-6 text-center">
+        <div className="border-t border-primary-foreground/10 pt-6 text-center flex flex-col items-center">
           <p className="text-sm text-primary-foreground/40">© 2026 Ishingiro Initiatives. {t("footer.rights")}</p>
+          <AdminPanel />
         </div>
       </div>
     </footer>

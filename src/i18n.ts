@@ -43,6 +43,13 @@ const resources = {
       team: {
         title: "Our Team",
         subtitle: "Meet the dedicated individuals making a difference",
+        organization: "Organization Team",
+        family: "Family & Community",
+        other: "Other Support",
+        category: {
+          organization: "Staff & Leaders",
+          family: "Family / Member"
+        }
       },
       testimonials: {
         title: "Stories of Hope",
@@ -110,6 +117,13 @@ const resources = {
       team: {
         title: "Notre Équipe",
         subtitle: "Découvrez les personnes dévouées qui font la différence",
+        organization: "Équipe de l'Organisation",
+        family: "Famille & Communauté",
+        other: "Autre Soutien",
+        category: {
+          organization: "Personnel & Dirigeants",
+          family: "Famille / Membre"
+        }
       },
       testimonials: {
         title: "Histoires d'Espoir",
@@ -177,6 +191,13 @@ const resources = {
       team: {
         title: "Ikipe Yacu",
         subtitle: "Menya abantu biyemeje gukora impinduka",
+        organization: "Ikipe y'Umuryango",
+        family: "Umuryango & Abaturage",
+        other: "Ubundi Bufasha",
+        category: {
+          organization: "Abakozi & Abayobozi",
+          family: "Umuryango / Umunyamuryango"
+        }
       },
       testimonials: {
         title: "Inkuru z'Icyizere",
